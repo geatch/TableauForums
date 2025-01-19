@@ -1,5 +1,5 @@
 def __main__():
-    import ForumsScraper
+    from forums_scraper import ForumsScraper
 
     fs = ForumsScraper()
     fs.run_process()
