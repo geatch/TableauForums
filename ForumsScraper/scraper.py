@@ -144,7 +144,8 @@ class ForumsScraper():
             print("Failed rep panel:", url)
             return None
         
-        soup = bs(self.chrome_driver.page_source) 
+        soup = bs(self.chrome_driver.page_source,
+                  features="html.parser")
         user_dict = {}
         
         user_dict["id"] = url[url.rfind('/')+1:]  
