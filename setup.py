@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="TableauForums",  # Name of the package
-    version="0.3.2",  # Package version
+    name="ForumsScraper",  # Name of the package
+    version="0.3.6",  # Package version
     author="Chris Geatch",  # Author's name
     author_email="chris@geatch.com",  # Author's email
     description="For logging the number of points users have on the Tableau Community Forums",  # Short description
