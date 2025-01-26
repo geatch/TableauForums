@@ -108,7 +108,8 @@ class ForumsScraper():
         self.chrome_driver.get(url)
 
         WebDriverWait(self.chrome_driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, 'teaser-item__description'))) 
-        soup = bs(self.chrome_driver.page_source) 
+        soup = bs(self.chrome_driver.page_source,
+                  features="html.parser") 
 
         sections = soup.find_all("article", class_='content')
 
