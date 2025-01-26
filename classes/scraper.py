@@ -30,7 +30,7 @@ class ForumsScraper():
         ]
 
         # Path to your service account JSON key file
-        SERVICE_ACCOUNT_FILE = '/home/chris/forums_scraper/credentials/thematic-gift-277111-1a38f1cdb4c7.json'
+        SERVICE_ACCOUNT_FILE = '/home/chris/credentials/thematic-gift-277111-1a38f1cdb4c7.json'
 
         # Authenticate and initialize the client
         credentials = Credentials.from_service_account_file(
