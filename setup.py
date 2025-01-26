@@ -9,7 +9,7 @@ setup(
     long_description=open("README.md").read(),  # Long description from README
     long_description_content_type="text/markdown",  # Content type of the long description
     url="https://github.com/geatch/TableauForums.git",  # URL to the project's repository
-    packages=find_packages(),  # Automatically discover packages
+    packages=find_packages(exclude=["credentials"]),  # Automatically discover packages
     classifiers=[
         "Programming Language :: Python :: 3",  # Target Python version
         "License :: OSI Approved :: MIT License",  # License
