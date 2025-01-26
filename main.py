@@ -1,6 +1,5 @@
-def __main__():
-    from forums_scraper import ForumsScraper
+from ForumsScraper import scraper
 
-    fs = ForumsScraper()
-    fs.run_process()
-    fs = None
+fs = scraper.ForumsScraper()
+fs.run_process()
+fs = None
